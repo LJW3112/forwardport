@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg.png) no-repeat fixed center top;
+    min-height: 100vh;
+    /* background-color: black; */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+}
+
+.nav {
+    height: 80px;
+    line-height: 80px;
+    background-image: url(./images/eclipseche.svg);
+    background-color: #272727;
+    background-repeat: no-repeat;
+    background-position: 180px 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content {
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    /* 强转大写 */
+    text-transform: uppercase;
+    position: relative;
+
+
+}
+
+.content::before {
+    content: 'Welcome Web';
+    color: olivedrab;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid olivedrab;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px rgb(25, 255, 94));
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: gray !important;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: "Microsoft YaHei", "Helvetica Neue", ;
+    line-height: 80px;
+    display: inline-block;
+}
+
+
+.title1 {
+    margin-left: 288px;
+}
+
+.title2 {
+    margin-left: 28px;
+}
+
+.title3 {
+    margin-left: 28px;
+}
+
+.title4 {
+    margin-left: 28px;
+}
+
+.title5 {
+    margin-left: 900px;
+}
+
+.title6 {
+    margin-left: 30px;
+}
+
+
+.main-content {
+    text-align: center;
+}
+
+.row2,
+.row3 {
+    margin-left: 50px;
+}
